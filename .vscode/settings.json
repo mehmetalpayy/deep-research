@@ -1,0 +1,39 @@
+{
+"python.terminal.activateEnvironment": false,
+  "python.languageServer": "Pylance",
+  "python.analysis.indexing": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+
+  "editor.rulers": [88],
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  "ruff.path": ["uv", "run", "ruff"],
+
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/.pytest_cache": true
+  },
+
+  "search.exclude": {
+    "**/dist": true,
+    "**/build": true,
+    "**/.venv": true
+  },
+
+  "git.autofetch": true,
+  "git.enableSmartCommit": true
+}
